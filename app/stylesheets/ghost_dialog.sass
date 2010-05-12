@@ -1,8 +1,8 @@
 @import "blueprint"
 
 // = shadow-1($width,$height)
-$width= 578px
-$height= 650px
+$width= 150px
+$height= 50px
 .ghost-dialog
   :clear left
   .close-dialog
@@ -107,7 +107,7 @@ $height= 650px
       // :width 152px
       // +column($width)
       width= $content_width
-      height= $content_height
+      height= 36px
     .mid-right
       .m-r-left,.m-r-center,.m-r-right
         :background url(/images/ghost_dialog/fantasmita-pixel-lateral-derecho-blanco.png) repeat-y 0 0
@@ -200,6 +200,8 @@ $height= 650px
       .t-c-center
         :background url(/images/ghost_dialog/fantasmita-chulito-arriba-negro.png) no-repeat 0 -2px
     &.bottom-chulito
-      .b-c-center
-        :background url(/images/ghost_dialog/fantasmita-chulito-abajo-negro.png) no-repeat 0 0px
-        :height 31px
+      .bottom
+        .bot-center
+          .b-c-center
+            :background url(/images/ghost_dialog/fantasmita-chulito-abajo-negro.png) no-repeat 0 0px
+            :height 31px

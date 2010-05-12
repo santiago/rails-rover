@@ -54,7 +54,7 @@
 }
 /* line 70, ../../app/stylesheets/ghost_dialog.sass */
 .ghost-dialog .top .top-center .t-c-right {
-  width: 494px;
+  width: 66px;
   height: 20px;
 }
 /* line 72, ../../app/stylesheets/ghost_dialog.sass */
@@ -86,7 +86,7 @@
 }
 /* line 87, ../../app/stylesheets/ghost_dialog.sass */
 .ghost-dialog.top-chulito .top-center .t-c-right {
-  width: 494px;
+  width: 66px;
   height: 31px;
 }
 /* line 89, ../../app/stylesheets/ghost_dialog.sass */
@@ -120,13 +120,13 @@
 /* line 103, ../../app/stylesheets/ghost_dialog.sass */
 .ghost-dialog .middle .mid-left .m-l-right {
   width: 24px;
-  height: 573px;
+  height: -27px;
 }
 /* line 105, ../../app/stylesheets/ghost_dialog.sass */
 .ghost-dialog .middle .mid-center {
   background: white;
-  width: 530px;
-  height: 609px;
+  width: 102px;
+  height: 36px;
 }
 /* line 112, ../../app/stylesheets/ghost_dialog.sass */
 .ghost-dialog .middle .mid-right .m-r-left, .ghost-dialog .middle .mid-right .m-r-center, .ghost-dialog .middle .mid-right .m-r-right {
@@ -145,7 +145,7 @@
 /* line 118, ../../app/stylesheets/ghost_dialog.sass */
 .ghost-dialog .middle .mid-right .m-r-right {
   width: 24px;
-  height: 573px;
+  height: -27px;
 }
 /* line 123, ../../app/stylesheets/ghost_dialog.sass */
 .ghost-dialog.bottom-chulito .bottom .bot-center .b-c-center {
@@ -179,7 +179,7 @@
 /* line 141, ../../app/stylesheets/ghost_dialog.sass */
 .ghost-dialog.left-chulito .mid-left .m-l-right {
   width: 35px;
-  height: 573px;
+  height: -27px;
 }
 /* line 143, ../../app/stylesheets/ghost_dialog.sass */
 .ghost-dialog.left-chulito .bottom {
@@ -214,7 +214,7 @@
 }
 /* line 160, ../../app/stylesheets/ghost_dialog.sass */
 .ghost-dialog .bottom .bot-center .b-c-right {
-  width: 487px;
+  width: 59px;
   height: 21px;
 }
 /* line 162, ../../app/stylesheets/ghost_dialog.sass */
@@ -279,8 +279,8 @@
 .ghost-dialog.negro.top-chulito .t-c-center {
   background: url(/images/ghost_dialog/fantasmita-chulito-arriba-negro.png) no-repeat 0 -2px;
 }
-/* line 203, ../../app/stylesheets/ghost_dialog.sass */
-.ghost-dialog.negro.bottom-chulito .b-c-center {
+/* line 205, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog.negro.bottom-chulito .bottom .bot-center .b-c-center {
   background: url(/images/ghost_dialog/fantasmita-chulito-abajo-negro.png) no-repeat 0 0px;
   height: 31px;
 }
@@ -392,13 +392,14 @@ h1 {
   margin: 0 auto;
   overflow: hidden;
   display: inline-block;
+  position: relative;
 }
 /* line 8, ../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.0.rc5/frameworks/compass/stylesheets/compass/utilities/general/_hacks.scss */
 .wrap-all {
   display: block;
 }
 
-/* line 25, ../../app/stylesheets/styles.sass */
+/* line 26, ../../app/stylesheets/styles.sass */
 .row {
   display: inline;
   float: left;
@@ -411,7 +412,7 @@ h1 {
   overflow-x: hidden;
 }
 
-/* line 28, ../../app/stylesheets/styles.sass */
+/* line 29, ../../app/stylesheets/styles.sass */
 .cell {
   border: 1px solid #aaaaaa;
   height: 18px;
@@ -427,7 +428,7 @@ h1 {
 * html .cell {
   overflow-x: hidden;
 }
-/* line 33, ../../app/stylesheets/styles.sass */
+/* line 34, ../../app/stylesheets/styles.sass */
 .cell.last {
   display: inline;
   float: left;
@@ -439,19 +440,21 @@ h1 {
   overflow-x: hidden;
 }
 
-/* line 36, ../../app/stylesheets/styles.sass */
+/* line 37, ../../app/stylesheets/styles.sass */
 #head {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 662px;
+  margin-bottom: 10px;
+  text-decoration: underline;
 }
 /* line 138, ../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.0.rc5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #head {
   overflow-x: hidden;
 }
 
-/* line 39, ../../app/stylesheets/styles.sass */
+/* line 42, ../../app/stylesheets/styles.sass */
 #rovers-console {
   display: inline;
   float: left;
@@ -462,7 +465,7 @@ h1 {
 * html #rovers-console {
   overflow-x: hidden;
 }
-/* line 41, ../../app/stylesheets/styles.sass */
+/* line 44, ../../app/stylesheets/styles.sass */
 #rovers-console .rover-control {
   margin-bottom: 10px;
   padding-bottom: 3px;
@@ -472,7 +475,7 @@ h1 {
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
 }
-/* line 48, ../../app/stylesheets/styles.sass */
+/* line 51, ../../app/stylesheets/styles.sass */
 #rovers-console .rover-control .label {
   margin-bottom: 5px;
   -moz-border-radius-topleft: 8px;
@@ -484,12 +487,12 @@ h1 {
   -moz-border-radius-bottomright: 0;
   -webkit-border-bottom-right-radius: 0;
 }
-/* line 53, ../../app/stylesheets/styles.sass */
+/* line 56, ../../app/stylesheets/styles.sass */
 #rovers-console .rover-control .position {
   padding-left: 28px;
   padding-left: 15px;
 }
-/* line 56, ../../app/stylesheets/styles.sass */
+/* line 59, ../../app/stylesheets/styles.sass */
 #rovers-console .rover-control .position * {
   display: inline;
   float: left;
@@ -502,7 +505,7 @@ h1 {
 * html #rovers-console .rover-control .position * {
   overflow-x: hidden;
 }
-/* line 60, ../../app/stylesheets/styles.sass */
+/* line 63, ../../app/stylesheets/styles.sass */
 #rovers-console .rover-control .position *.x, #rovers-console .rover-control .position *.y {
   border: 1px solid #666666;
   padding: 2px;
@@ -510,7 +513,7 @@ h1 {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
 }
-/* line 65, ../../app/stylesheets/styles.sass */
+/* line 68, ../../app/stylesheets/styles.sass */
 #rovers-console .rover-control .position *.y {
   display: inline;
   float: left;
@@ -521,12 +524,12 @@ h1 {
 * html #rovers-console .rover-control .position *.y {
   overflow-x: hidden;
 }
-/* line 67, ../../app/stylesheets/styles.sass */
+/* line 70, ../../app/stylesheets/styles.sass */
 #rovers-console .rover-control .position * input {
   border: 0;
 }
-/* line 69, ../../app/stylesheets/styles.sass */
-#rovers-console .rover-control .send-to-mars-btn {
+/* line 72, ../../app/stylesheets/styles.sass */
+#rovers-console .rover-control .send-to-mars-btn, #rovers-console .rover-control .back-to-earth-btn {
   font-size: 10px;
   padding: 2px;
   background-color: #bdbdbd;
@@ -536,33 +539,33 @@ h1 {
   text-decoration: none;
 }
 
-/* line 84, ../../app/stylesheets/styles.sass */
+/* line 87, ../../app/stylesheets/styles.sass */
 #rover-control-0 .label {
   background-color: #eddb68;
 }
 
-/* line 87, ../../app/stylesheets/styles.sass */
+/* line 90, ../../app/stylesheets/styles.sass */
 #rover-control-1 .label {
   background-color: #68ed8a;
 }
 
-/* line 90, ../../app/stylesheets/styles.sass */
+/* line 93, ../../app/stylesheets/styles.sass */
 #rover-control-2 .label {
   background-color: #c368ed;
 }
 
-/* line 93, ../../app/stylesheets/styles.sass */
+/* line 96, ../../app/stylesheets/styles.sass */
 #rover-control-3 .label {
   background-color: #7668ed;
 }
 
-/* line 96, ../../app/stylesheets/styles.sass */
+/* line 99, ../../app/stylesheets/styles.sass */
 #rover-control-4 .label {
   background-color: #ed8168;
 }
 
-/* line 98, ../../app/stylesheets/styles.sass */
-#grid {
+/* line 101, ../../app/stylesheets/styles.sass */
+#mars {
   position: relative;
   display: inline;
   float: left;
@@ -570,49 +573,57 @@ h1 {
   width: 550px;
 }
 /* line 138, ../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.0.rc5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html #grid {
+* html #mars {
   overflow-x: hidden;
 }
-/* line 101, ../../app/stylesheets/styles.sass */
-#grid .rover {
+/* line 104, ../../app/stylesheets/styles.sass */
+#mars .rover {
   width: 18px;
   height: 18px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border: 1px solid black;
 }
-/* line 105, ../../app/stylesheets/styles.sass */
-#grid .rover#rover-0 {
+/* line 108, ../../app/stylesheets/styles.sass */
+#mars .rover#rover-0 {
   position: absolute;
   left: 0px;
   top: 27px;
   background-color: #eddb68;
 }
-/* line 108, ../../app/stylesheets/styles.sass */
-#grid .rover#rover-1 {
+/* line 111, ../../app/stylesheets/styles.sass */
+#mars .rover#rover-1 {
   position: absolute;
   left: 27px;
   top: 0;
   background-color: #68ed8a;
 }
-/* line 111, ../../app/stylesheets/styles.sass */
-#grid .rover#rover-2 {
+/* line 114, ../../app/stylesheets/styles.sass */
+#mars .rover#rover-2 {
   position: absolute;
   left: 54px;
   top: 0;
   background-color: #c368ed;
 }
-/* line 114, ../../app/stylesheets/styles.sass */
-#grid .rover#rover-3 {
+/* line 117, ../../app/stylesheets/styles.sass */
+#mars .rover#rover-3 {
   position: absolute;
   left: 81px;
   top: 0;
   background-color: #7668ed;
 }
-/* line 117, ../../app/stylesheets/styles.sass */
-#grid .rover#rover-4 {
+/* line 120, ../../app/stylesheets/styles.sass */
+#mars .rover#rover-4 {
   position: absolute;
   left: 108px;
   top: 0;
   background-color: #ed8168;
+}
+
+/* line 124, ../../app/stylesheets/styles.sass */
+#mars-tooltip {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
 }

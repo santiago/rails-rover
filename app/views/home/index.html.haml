@@ -7,7 +7,7 @@
         %h1 Roger that, Houston!
       #rovers-console
         - 5.times do |i|
-          .rover-control{:id=>"rover-control-#{i}"}
+          .rover-control{:id=>"rover-control-#{i}", :class=>"craft-#{i}"}
             .label Rover #{i}
             .position.hidden
               %span.x
@@ -16,17 +16,20 @@
               %span.y
                 %input{:type=>"text", :name=>"y"}
             %a.send-to-mars-btn{:href=>"#"} Send to Mars
+            %a.back-to-earth-btn.hidden{:href=>"#"} Back to Earth
         .reset
           %a Reset
         
-      #grid
-        %span#rover-0.rover &nbsp;
-        %span#rover-1.rover &nbsp;
-        %span#rover-2.rover &nbsp;
-        %span#rover-3.rover &nbsp;
-        %span#rover-4.rover &nbsp;
+      #mars
+        #mars-tooltip.hidden
+          = render "shared/ghost_dialog"
         - 20.times do |y|
           .row{:id=>"row-#{y}"}
             - 20.times do |x|
               .cell{:id=>"cell-#{x}-#{y}", :class=>"#{x==19 ? 'last' : nil}"}
-
+#earth.hidden
+  %span#rover-0.rover.hidden &nbsp;
+  %span#rover-1.rover.hidden &nbsp;
+  %span#rover-2.rover.hidden &nbsp;
+  %span#rover-3.rover.hidden &nbsp;
+  %span#rover-4.rover.hidden &nbsp;
