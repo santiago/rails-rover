@@ -4,7 +4,7 @@
   %body
     .wrap-all
       #head
-        %h1 Roger that, Houston!
+        %h1 ReSTful that, Houston!
       #rovers-console
         - 5.times do |i|
           .rover-control{:id=>"rover-control-#{i}", :class=>"craft-#{i}"}
@@ -12,13 +12,11 @@
             .position.hidden
               %span.x
                 %input{:type=>"text", :name=>"x"}
-              %span.comma ,
               %span.y
                 %input{:type=>"text", :name=>"y"}
+              %a.go{:href=>"#"} go!
             %a.send-to-mars-btn{:href=>"#"} Send to Mars
             %a.back-to-earth-btn.hidden{:href=>"#"} Back to Earth
-        .reset
-          %a Reset
         
       #mars
         #mars-tooltip.hidden

@@ -11,15 +11,7 @@ class Rover < ActiveRecord::Base
                          :in => 0..19, 
                          :message => "I can't reach that position"
 
-  def move_1d(direction, distance)
-    self.x= self.x+distance if direction == "x"
-    self.y= self.y+distance if direction == "y"
-    self.save!
-  end
-
-  def move_2d(distance_x, distance_y)
-    self.x= x
-    self.y= y
-    self.save!
+  def move(x, y)
+    self.update_attributes({:x=>self.x+x.to_i,:y=>self.y+y.to_i})
   end
 end

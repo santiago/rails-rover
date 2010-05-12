@@ -13,6 +13,8 @@ body
   overflow: hidden
   font-family: "HelveticaNeue-Light","HelveticaNeue",Helvetica,Arial,sans-serif
   font-family: "Lucida Grande",Arial,Helvetica,Verdana,sans-serif
+a
+  text-decoration: none
 
 h1
   font-size: 60px
@@ -39,6 +41,12 @@ h1
   margin-bottom: 10px
   text-decoration: underline
 
+$rover_0_color= #EDDB68
+$rover_1_color= #68ED8A
+$rover_2_color= #C368ED
+$rover_3_color= #7668ED
+$rover_4_color= #ED8168
+
 #rovers-console
   +column(4)
   .rover-control
@@ -58,15 +66,24 @@ h1
       padding-left: 15px
       *
         +column(1)
-        height: 24px
+        height: 18px
         margin-right: 2px
         &.x,&.y
-          border: 1px solid #666
+          border: 1px solid #BDBDBD
           padding: 2px
           font-size: 20px
           +corner(4px)
         &.y
           +column(1, true)
+        &.go
+          font-size: 10px
+          padding: 1px 4px 6px 2px
+          color: #000
+          margin-top: 3px
+          height: 10px
+          background-color: #BDBDBD
+          +corner-right(6px)
+          color: #FFF
         input
           border: 0
     .send-to-mars-btn,.back-to-earth-btn
@@ -75,28 +92,24 @@ h1
       background-color: #BDBDBD
       +corner(6px)
       color: #FFF
-      text-decoration: none
-
-$rover_0_color= #EDDB68
-$rover_1_color= #68ED8A
-$rover_2_color= #C368ED
-$rover_3_color= #7668ED
-$rover_4_color= #ED8168
+      +column(3)
+      margin-top: 5px
+      margin-left: 11px
 
 #rover-control-0
-  .label
+  .label,.go
     background-color= $rover_0_color
 #rover-control-1
-  .label
+  .label,.go
     background-color= $rover_1_color
 #rover-control-2
-  .label
+  .label,.go
     background-color= $rover_2_color
 #rover-control-3
-  .label
+  .label,.go
     background-color= $rover_3_color
 #rover-control-4
-  .label
+  .label,.go
     background-color= $rover_4_color
 #mars
   position: relative

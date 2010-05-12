@@ -376,17 +376,22 @@ body {
   font-family: "Lucida Grande", Arial, Helvetica, Verdana, sans-serif;
 }
 
-/* line 17, ../../app/stylesheets/styles.sass */
+/* line 16, ../../app/stylesheets/styles.sass */
+a {
+  text-decoration: none;
+}
+
+/* line 19, ../../app/stylesheets/styles.sass */
 h1 {
   font-size: 60px;
 }
 
-/* line 20, ../../app/stylesheets/styles.sass */
+/* line 22, ../../app/stylesheets/styles.sass */
 .hidden {
   display: none;
 }
 
-/* line 23, ../../app/stylesheets/styles.sass */
+/* line 25, ../../app/stylesheets/styles.sass */
 .wrap-all {
   width: 662px;
   margin: 0 auto;
@@ -399,7 +404,7 @@ h1 {
   display: block;
 }
 
-/* line 26, ../../app/stylesheets/styles.sass */
+/* line 28, ../../app/stylesheets/styles.sass */
 .row {
   display: inline;
   float: left;
@@ -412,7 +417,7 @@ h1 {
   overflow-x: hidden;
 }
 
-/* line 29, ../../app/stylesheets/styles.sass */
+/* line 31, ../../app/stylesheets/styles.sass */
 .cell {
   border: 1px solid #aaaaaa;
   height: 18px;
@@ -428,7 +433,7 @@ h1 {
 * html .cell {
   overflow-x: hidden;
 }
-/* line 34, ../../app/stylesheets/styles.sass */
+/* line 36, ../../app/stylesheets/styles.sass */
 .cell.last {
   display: inline;
   float: left;
@@ -440,7 +445,7 @@ h1 {
   overflow-x: hidden;
 }
 
-/* line 37, ../../app/stylesheets/styles.sass */
+/* line 39, ../../app/stylesheets/styles.sass */
 #head {
   display: inline;
   float: left;
@@ -454,7 +459,7 @@ h1 {
   overflow-x: hidden;
 }
 
-/* line 42, ../../app/stylesheets/styles.sass */
+/* line 50, ../../app/stylesheets/styles.sass */
 #rovers-console {
   display: inline;
   float: left;
@@ -465,7 +470,7 @@ h1 {
 * html #rovers-console {
   overflow-x: hidden;
 }
-/* line 44, ../../app/stylesheets/styles.sass */
+/* line 52, ../../app/stylesheets/styles.sass */
 #rovers-console .rover-control {
   margin-bottom: 10px;
   padding-bottom: 3px;
@@ -475,7 +480,7 @@ h1 {
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
 }
-/* line 51, ../../app/stylesheets/styles.sass */
+/* line 59, ../../app/stylesheets/styles.sass */
 #rovers-console .rover-control .label {
   margin-bottom: 5px;
   -moz-border-radius-topleft: 8px;
@@ -487,33 +492,33 @@ h1 {
   -moz-border-radius-bottomright: 0;
   -webkit-border-bottom-right-radius: 0;
 }
-/* line 56, ../../app/stylesheets/styles.sass */
+/* line 64, ../../app/stylesheets/styles.sass */
 #rovers-console .rover-control .position {
   padding-left: 28px;
   padding-left: 15px;
 }
-/* line 59, ../../app/stylesheets/styles.sass */
+/* line 67, ../../app/stylesheets/styles.sass */
 #rovers-console .rover-control .position * {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 18px;
-  height: 24px;
+  height: 18px;
   margin-right: 2px;
 }
 /* line 138, ../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.0.rc5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #rovers-console .rover-control .position * {
   overflow-x: hidden;
 }
-/* line 63, ../../app/stylesheets/styles.sass */
+/* line 71, ../../app/stylesheets/styles.sass */
 #rovers-console .rover-control .position *.x, #rovers-console .rover-control .position *.y {
-  border: 1px solid #666666;
+  border: 1px solid #bdbdbd;
   padding: 2px;
   font-size: 20px;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
 }
-/* line 68, ../../app/stylesheets/styles.sass */
+/* line 76, ../../app/stylesheets/styles.sass */
 #rovers-console .rover-control .position *.y {
   display: inline;
   float: left;
@@ -524,11 +529,29 @@ h1 {
 * html #rovers-console .rover-control .position *.y {
   overflow-x: hidden;
 }
-/* line 70, ../../app/stylesheets/styles.sass */
+/* line 78, ../../app/stylesheets/styles.sass */
+#rovers-console .rover-control .position *.go {
+  font-size: 10px;
+  padding: 1px 4px 6px 2px;
+  color: black;
+  margin-top: 3px;
+  height: 10px;
+  background-color: #bdbdbd;
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 6px;
+  -webkit-border-top-right-radius: 6px;
+  -moz-border-radius-bottomleft: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -moz-border-radius-bottomright: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  color: white;
+}
+/* line 87, ../../app/stylesheets/styles.sass */
 #rovers-console .rover-control .position * input {
   border: 0;
 }
-/* line 72, ../../app/stylesheets/styles.sass */
+/* line 89, ../../app/stylesheets/styles.sass */
 #rovers-console .rover-control .send-to-mars-btn, #rovers-console .rover-control .back-to-earth-btn {
   font-size: 10px;
   padding: 2px;
@@ -536,35 +559,44 @@ h1 {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   color: white;
-  text-decoration: none;
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 74px;
+  margin-top: 5px;
+  margin-left: 11px;
+}
+/* line 138, ../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.0.rc5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #rovers-console .rover-control .send-to-mars-btn, * html #rovers-console .rover-control .back-to-earth-btn {
+  overflow-x: hidden;
 }
 
-/* line 87, ../../app/stylesheets/styles.sass */
-#rover-control-0 .label {
+/* line 100, ../../app/stylesheets/styles.sass */
+#rover-control-0 .label, #rover-control-0 .go {
   background-color: #eddb68;
 }
 
-/* line 90, ../../app/stylesheets/styles.sass */
-#rover-control-1 .label {
+/* line 103, ../../app/stylesheets/styles.sass */
+#rover-control-1 .label, #rover-control-1 .go {
   background-color: #68ed8a;
 }
 
-/* line 93, ../../app/stylesheets/styles.sass */
-#rover-control-2 .label {
+/* line 106, ../../app/stylesheets/styles.sass */
+#rover-control-2 .label, #rover-control-2 .go {
   background-color: #c368ed;
 }
 
-/* line 96, ../../app/stylesheets/styles.sass */
-#rover-control-3 .label {
+/* line 109, ../../app/stylesheets/styles.sass */
+#rover-control-3 .label, #rover-control-3 .go {
   background-color: #7668ed;
 }
 
-/* line 99, ../../app/stylesheets/styles.sass */
-#rover-control-4 .label {
+/* line 112, ../../app/stylesheets/styles.sass */
+#rover-control-4 .label, #rover-control-4 .go {
   background-color: #ed8168;
 }
 
-/* line 101, ../../app/stylesheets/styles.sass */
+/* line 114, ../../app/stylesheets/styles.sass */
 #mars {
   position: relative;
   display: inline;
@@ -576,7 +608,7 @@ h1 {
 * html #mars {
   overflow-x: hidden;
 }
-/* line 104, ../../app/stylesheets/styles.sass */
+/* line 117, ../../app/stylesheets/styles.sass */
 #mars .rover {
   width: 18px;
   height: 18px;
@@ -584,35 +616,35 @@ h1 {
   -webkit-border-radius: 10px;
   border: 1px solid black;
 }
-/* line 108, ../../app/stylesheets/styles.sass */
+/* line 121, ../../app/stylesheets/styles.sass */
 #mars .rover#rover-0 {
   position: absolute;
   left: 0px;
   top: 27px;
   background-color: #eddb68;
 }
-/* line 111, ../../app/stylesheets/styles.sass */
+/* line 124, ../../app/stylesheets/styles.sass */
 #mars .rover#rover-1 {
   position: absolute;
   left: 27px;
   top: 0;
   background-color: #68ed8a;
 }
-/* line 114, ../../app/stylesheets/styles.sass */
+/* line 127, ../../app/stylesheets/styles.sass */
 #mars .rover#rover-2 {
   position: absolute;
   left: 54px;
   top: 0;
   background-color: #c368ed;
 }
-/* line 117, ../../app/stylesheets/styles.sass */
+/* line 130, ../../app/stylesheets/styles.sass */
 #mars .rover#rover-3 {
   position: absolute;
   left: 81px;
   top: 0;
   background-color: #7668ed;
 }
-/* line 120, ../../app/stylesheets/styles.sass */
+/* line 133, ../../app/stylesheets/styles.sass */
 #mars .rover#rover-4 {
   position: absolute;
   left: 108px;
@@ -620,7 +652,7 @@ h1 {
   background-color: #ed8168;
 }
 
-/* line 124, ../../app/stylesheets/styles.sass */
+/* line 137, ../../app/stylesheets/styles.sass */
 #mars-tooltip {
   position: absolute;
   left: 0;

@@ -43,6 +43,14 @@ $.widget("ui.rover_control", {
 	    $el.find(".back-to-earth-btn").click(function() {
 		    $($rover).rover("earth_land");
 		});
+
+	    $el.find(".position .go").click(function() {
+		    var current_pos= $($rover).rover("position");
+		    var x= $el.find(".x input").val()-current_pos[0];
+		    var y= $el.find(".y input").val()-current_pos[1];
+		    if (!(x==0 && y==0))
+			$($rover).rover("move",x,y);
+		});
 	}
     });
 
@@ -126,8 +134,23 @@ $.widget("ui.rover", {
 	    this._y= null;
 	    $("#earth").append($el);
 	    $el.trigger("on_earth");
+	},
+        move: function(x,y) {
+	    var self= this;
+	    var post_data= {_method:"put",
+			    distance_x:x,
+			    distance_y:y
+	    };
+	    if (!(x==0 && y==0))
+		$.post(this.resource+"/"+this._id+"/move", post_data, function(data) {
+			self._state(JSON.parse(data).rover);
+		    });
+	},
+        position: function() {
+	    return [this._x,this._y];
 	}
     });
+$.extend($.ui.rover, {getter:"position"});
 
 jQuery(document).ready(function($) {
 	$(".rover-control").rover_control();
