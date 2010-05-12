@@ -1,0 +1,12 @@
+class CreateRovers < ActiveRecord::Migration
+  def self.up
+    create_table :rovers do |t|
+
+      t.timestamps
+    end
+  end
+
+  def self.down
+    drop_table :rovers
+  end
+end

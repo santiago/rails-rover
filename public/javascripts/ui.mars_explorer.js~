@@ -1,0 +1,4 @@
+$("ui.rover_control", {
+	_init: function() {
+	}
+    });

@@ -1,0 +1,69 @@
+#partner-profile-form
+  .first-name.field
+    .label 
+      %p First Name
+    .input
+      %input{:type=>"text", :name=>"first_name"}
+  .last-name.field
+    .label 
+      %p Last Name
+    .input
+      %input{:type=>"text", :name=>"last_name"}
+  .birthdate.field
+    .top-label 
+      %p Birthdate
+    .day.field
+      .label 
+        %p day
+    .month.field
+      .label 
+        %p month
+    .year.field
+      .label
+        %p year
+  .sex.field
+    .top-label 
+      %p Sex
+    .male
+      .label
+        %p M
+    .female
+      .label
+        %p F
+  .email.field
+    .label 
+      %p Email
+    .input
+      %input{:type=>"text", :name=>"email"}
+  .username.field
+    .label 
+      %p Username
+    .input
+      %input{:type=>"text", :name=>"username"}
+  .password.field
+    .label 
+      %p Password
+    .input
+      %input{:type=>"password", :name=>"password"}
+  .repassword.field
+    .label 
+      %p Confirm password
+    .input
+      %input{:type=>"password", :name=>"repassword"}
+  .mobile.field
+    .label 
+      %p Mobile
+    .input
+      %input{:tpe=>"password", :name=>"mobile"}
+  .location.field
+    .city.field
+      .label
+        %p City
+    .zip.field
+      .label
+        %p Zip
+    .state.field
+      .label
+        %p State
+  .save-btn
+    %p save

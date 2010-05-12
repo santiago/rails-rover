@@ -1,0 +1,18 @@
+<h1>Listing rovers</h1>
+
+<table>
+  <tr>
+  </tr>
+
+<% @rovers.each do |rover| %>
+  <tr>
+    <td><%= link_to 'Show', rover %></td>
+    <td><%= link_to 'Edit', edit_rover_path(rover) %></td>
+    <td><%= link_to 'Destroy', rover, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New rover', new_rover_path %>

@@ -1,0 +1,5 @@
+class HomeController < ApplicationController
+  def index
+    @ghost_dialog_content= "partner_profile_form"
+  end
+end

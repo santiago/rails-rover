@@ -1,0 +1,119 @@
+$blueprint_grid_columns : 24
+$blueprint_grid_width : 18px
+
+@import utils
+@import ghost_dialog
+@import blueprint
+@import blueprint/reset
+
++blueprint-global-reset
+
+body
+  margin-top: 0
+  overflow: hidden
+  font-family: "HelveticaNeue-Light","HelveticaNeue",Helvetica,Arial,sans-serif
+  font-family: "Lucida Grande",Arial,Helvetica,Verdana,sans-serif
+
+h1
+  font-size: 60px
+
+.hidden
+  display: none
+
+.wrap-all
+  +container
+.row
+  +column(20)
+  margin-bottom: 7px
+.cell
+  border: 1px solid #AAA
+  height: $blueprint_grid_width
+  +column(1)
+  +corner(10px)
+  &.last
+    +column(1, true)
+  margin-right: 7px
+#head
+  +column(24)
+
+#rovers-console
+  +column(4)
+  .rover-control
+    margin-bottom: 10px
+    padding-bottom: 3px
+    border: 1px solid #AAA
+    height: 75px
+    text-align: center
+    +corner(8px)
+    .label
+      margin-bottom: 5px
+      +corner-top(8px)
+    .comma
+      
+    .position
+      +prepend(1)
+      padding-left: 15px
+      *
+        +column(1)
+        height: 24px
+        margin-right: 2px
+        &.x,&.y
+          border: 1px solid #666
+          padding: 2px
+          font-size: 20px
+          +corner(4px)
+        &.y
+          +column(1, true)
+        input
+          border: 0
+    .send-to-mars-btn
+      font-size: 10px
+      padding: 2px
+      background-color: #BDBDBD
+      +corner(6px)
+      color: #FFF
+      text-decoration: none
+
+$rover_0_color= #EDDB68
+$rover_1_color= #68ED8A
+$rover_2_color= #C368ED
+$rover_3_color= #7668ED
+$rover_4_color= #ED8168
+
+#rover-control-0
+  .label
+    background-color= $rover_0_color
+#rover-control-1
+  .label
+    background-color= $rover_1_color
+#rover-control-2
+  .label
+    background-color= $rover_2_color
+#rover-control-3
+  .label
+    background-color= $rover_3_color
+#rover-control-4
+  .label
+    background-color= $rover_4_color
+#grid
+  position: relative
+  +column(20,true)
+  .rover
+    +box($blueprint_grid_width,$blueprint_grid_width)
+    +corner(10px)
+    border: 1px solid #000
+    &#rover-0
+      +pos(0px,27px)
+      background-color: $rover_0_color   
+    &#rover-1
+      +pos(27px,0)
+      background-color: $rover_1_color   
+    &#rover-2
+      +pos(54px,0)
+      background-color: $rover_2_color   
+    &#rover-3
+      +pos(81px,0)
+      background-color: $rover_3_color   
+    &#rover-4
+      +pos(108px,0)
+      background-color: $rover_4_color   

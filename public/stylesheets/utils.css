@@ -1,0 +1,11 @@
+/* line 27, ../../app/stylesheets/utils.sass */
+.corner-all-4px {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+
+/* line 29, ../../app/stylesheets/utils.sass */
+.corner-all-8px {
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+}

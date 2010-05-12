@@ -1,0 +1,85 @@
+class RoversController < ApplicationController
+  # GET /rovers
+  # GET /rovers.xml
+  def index
+    @rovers = Rover.all
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @rovers }
+    end
+  end
+
+  # GET /rovers/1
+  # GET /rovers/1.xml
+  def show
+    @rover = Rover.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.xml  { render :xml => @rover }
+    end
+  end
+
+  # GET /rovers/new
+  # GET /rovers/new.xml
+  def new
+    @rover = Rover.new
+
+    respond_to do |format|
+      format.html # new.html.erb
+      format.xml  { render :xml => @rover }
+    end
+  end
+
+  # GET /rovers/1/edit
+  def edit
+    @rover = Rover.find(params[:id])
+  end
+
+  # POST /rovers
+  # POST /rovers.xml
+  def create
+    @rover = Rover.new(params[:rover])
+
+    respond_to do |format|
+      if @rover.save
+        flash[:notice] = 'Rover was successfully created.'
+        format.html { redirect_to(@rover) }
+        format.xml  { render :xml => @rover, :status => :created, :location => @rover }
+      else
+        format.html { render :action => "new" }
+        format.xml  { render :xml => @rover.errors, :status => :unprocessable_entity }
+      end
+    end
+  end
+
+  # PUT /rovers/1
+  # PUT /rovers/1.xml
+  def update
+    @rover = Rover.find(params[:id])
+
+    respond_to do |format|
+      if @rover.update_attributes(params[:rover])
+        flash[:notice] = 'Rover was successfully updated.'
+        format.html { redirect_to(@rover) }
+        format.xml  { head :ok }
+      else
+        format.html { render :action => "edit" }
+        format.xml  { render :xml => @rover.errors, :status => :unprocessable_entity }
+      end
+    end
+  end
+
+  # DELETE /rovers/1
+  # DELETE /rovers/1.xml
+  def destroy
+    @rover = Rover.find(params[:id])
+    @rover.destroy
+
+    respond_to do |format|
+      format.html { redirect_to(rovers_url) }
+      format.xml  { head :ok }
+    end
+  end
+end

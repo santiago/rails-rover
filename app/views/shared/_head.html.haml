@@ -1,0 +1,14 @@
+%head
+  %title Roger that Houston!
+
+  = stylesheet_link_tag 'screen.css', :media => 'screen, projection'
+  = stylesheet_link_tag 'print.css', :media => 'print'
+  /[if lt IE 8]
+    = stylesheet_link_tag 'ie.css', :media => 'screen, projection'
+  = stylesheet_link_tag 'styles.css', :media => 'screen'
+
+  = jquery
+  = jquery_plugin "ui/ui.core"
+  = jquery_plugin "json/jquery.json-2.2.min"
+
+  = javascript_include_tag "ui.mars_explorer"

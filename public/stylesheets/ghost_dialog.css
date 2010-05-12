@@ -1,0 +1,88 @@
+/*
+Syntax error: Undefined mixin 'rpos'.
+        on line 9 of /home/santiago/Projects/ecc/rails/app/stylesheets/ghost_dialog.sass, in `rpos'
+        from line 9 of /home/santiago/Projects/ecc/rails/app/stylesheets/ghost_dialog.sass
+
+4: $width= 578px
+5: $height= 650px
+6: .ghost-dialog
+7:   :clear left
+8:   .close-dialog
+9:     +rpos(12px,8px)
+10: 
+11: 
+12: 
+13:   // new variables
+14:   $left= 24px
+
+Backtrace:
+/home/santiago/Projects/ecc/rails/app/stylesheets/ghost_dialog.sass:9:in `rpos'
+/home/santiago/Projects/ecc/rails/app/stylesheets/ghost_dialog.sass:9
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.0.rc.4/lib/sass/tree/mixin_node.rb:72:in `perform!'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.0.rc.4/lib/sass/tree/node.rb:312:in `_perform'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.0.rc.4/lib/sass/tree/node.rb:220:in `perform'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.0.rc.4/lib/sass/tree/node.rb:333:in `perform_children'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.0.rc.4/lib/sass/tree/node.rb:333:in `map'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.0.rc.4/lib/sass/tree/node.rb:333:in `perform_children'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.0.rc.4/lib/sass/tree/node.rb:324:in `perform!'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.0.rc.4/lib/sass/tree/rule_node.rb:188:in `perform!'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.0.rc.4/lib/sass/tree/node.rb:312:in `_perform'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.0.rc.4/lib/sass/tree/node.rb:220:in `perform'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.0.rc.4/lib/sass/tree/node.rb:333:in `perform_children'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.0.rc.4/lib/sass/tree/node.rb:333:in `map'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.0.rc.4/lib/sass/tree/node.rb:333:in `perform_children'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.0.rc.4/lib/sass/tree/node.rb:324:in `perform!'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.0.rc.4/lib/sass/tree/rule_node.rb:188:in `perform!'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.0.rc.4/lib/sass/tree/node.rb:312:in `_perform'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.0.rc.4/lib/sass/tree/node.rb:220:in `perform'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.0.rc.4/lib/sass/tree/node.rb:333:in `perform_children'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.0.rc.4/lib/sass/tree/node.rb:333:in `map'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.0.rc.4/lib/sass/tree/node.rb:333:in `perform_children'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.0.rc.4/lib/sass/tree/node.rb:324:in `perform!'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.0.rc.4/lib/sass/tree/root_node.rb:44:in `perform!'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.0.rc.4/lib/sass/tree/node.rb:312:in `_perform'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.0.rc.4/lib/sass/tree/node.rb:220:in `perform'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.0.rc.4/lib/sass/tree/root_node.rb:27:in `perform'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.0.rc.4/lib/sass/tree/node.rb:129:in `render'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.0.rc.4/lib/sass/plugin.rb:361:in `update_stylesheet'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.0.rc.4/lib/sass/plugin.rb:226:in `update_stylesheets'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.0.rc.4/lib/sass/plugin.rb:219:in `each'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.0.rc.4/lib/sass/plugin.rb:219:in `update_stylesheets'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.0.rc.4/lib/sass/plugin.rb:217:in `each'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.0.rc.4/lib/sass/plugin.rb:217:in `update_stylesheets'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.0.rc.4/lib/sass/plugin.rb:191:in `check_for_updates'
+/usr/lib/ruby/gems/1.8/gems/haml-3.0.0.rc.4/lib/sass/plugin/rack.rb:42:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/usr/lib/ruby/gems/1.8/gems/thin-1.2.7/lib/rack/adapter/rails.rb:74:in `call'
+/usr/lib/ruby/gems/1.8/gems/thin-1.2.7/lib/thin/connection.rb:76:in `pre_process'
+/usr/lib/ruby/gems/1.8/gems/thin-1.2.7/lib/thin/connection.rb:74:in `catch'
+/usr/lib/ruby/gems/1.8/gems/thin-1.2.7/lib/thin/connection.rb:74:in `pre_process'
+/usr/lib/ruby/gems/1.8/gems/thin-1.2.7/lib/thin/connection.rb:57:in `process'
+/usr/lib/ruby/gems/1.8/gems/thin-1.2.7/lib/thin/connection.rb:42:in `receive_data'
+/usr/lib/ruby/gems/1.8/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run_machine'
+/usr/lib/ruby/gems/1.8/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run'
+/usr/lib/ruby/gems/1.8/gems/thin-1.2.7/lib/thin/backends/base.rb:57:in `start'
+/usr/lib/ruby/gems/1.8/gems/thin-1.2.7/lib/thin/server.rb:156:in `start'
+/usr/lib/ruby/gems/1.8/gems/thin-1.2.7/lib/thin/controllers/controller.rb:80:in `start'
+/usr/lib/ruby/gems/1.8/gems/thin-1.2.7/lib/thin/runner.rb:177:in `send'
+/usr/lib/ruby/gems/1.8/gems/thin-1.2.7/lib/thin/runner.rb:177:in `run_command'
+/usr/lib/ruby/gems/1.8/gems/thin-1.2.7/lib/thin/runner.rb:143:in `run!'
+/usr/lib/ruby/gems/1.8/gems/thin-1.2.7/bin/thin:6
+/usr/bin/thin:19:in `load'
+/usr/bin/thin:19
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'rpos'.\A         on line 9 of /home/santiago/Projects/ecc/rails/app/stylesheets/ghost_dialog.sass, in `rpos'\A         from line 9 of /home/santiago/Projects/ecc/rails/app/stylesheets/ghost_dialog.sass\A \A 4: $width= 578px\A 5: $height= 650px\A 6: .ghost-dialog\A 7:   :clear left\A 8:   .close-dialog\A 9:     +rpos(12px,8px)\A 10: \A 11: \A 12: \A 13:   // new variables\A 14:   $left= 24px"; }

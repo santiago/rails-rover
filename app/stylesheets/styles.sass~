@@ -1,0 +1,82 @@
+$blueprint_grid_columns : 24
+$blueprint_grid_width : 18px
+
+@import utils
+@import ghost_dialog
+@import blueprint
+@import blueprint/reset
+
++blueprint-global-reset
+
+body
+  margin-top: 0
+  overflow: hidden
+  font-family: "HelveticaNeue-Light","HelveticaNeue",Helvetica,Arial,sans-serif
+  font-family: "Lucida Grande",Arial,Helvetica,Verdana,sans-serif
+
+h1
+  font-size: 60px
+
+.wrap-all
+  +container
+.row
+  +column(20)
+  margin-bottom: 10px
+.cell
+  border: 1px solid #AAA
+  height: 18px
+  +column(1)
+  +corner(10px)
+  &.last
+    +column(1, true)
+  margin-right: 7px
+#head
+  +column(24)
+
+#rover-checker
+  +column(4)
+  .rover
+    margin-bottom: 10px
+    padding: 3px 0px
+    border: 1px solid #AAA
+    height: 50px
+    text-align: center
+    +corner(8px)
+    .position
+      +prepend(1)
+      padding-left: 15px
+      p
+        +column(1)
+        height: 24px
+        margin-right: 2px
+        &.x,&.y
+          border: 1px solid #666
+          padding: 2px
+          font-size: 20px
+          +corner(4px)
+        &.y
+          +column(1, true)
+
+$rover_0_color= #EDDB68
+$rover_1_color= #68ED8A
+$rover_2_color= #C368ED
+$rover_3_color= #7668ED
+$rover_4_color= #ED8168
+
+#rover-0
+  .label
+    background-color= $rover_0_color
+#rover-1
+  .label
+    background-color= $rover_1_color
+#rover-2
+  .label
+    background-color= $rover_2_color
+#rover-3
+  .label
+    background-color= $rover_3_color
+#rover-4
+  .label
+    background-color= $rover_4_color
+#grid
+  +column(20,true)

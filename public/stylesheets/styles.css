@@ -1,0 +1,618 @@
+/* line 27, ../../app/stylesheets/utils.sass */
+.corner-all-4px {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+
+/* line 29, ../../app/stylesheets/utils.sass */
+.corner-all-8px {
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+}
+
+/* line 6, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog {
+  clear: left;
+  left: -100px;
+  top: 20px;
+  background: black;
+}
+/* line 8, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog .close-dialog {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+}
+/* line 52, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog .top-left, .ghost-dialog .top-center, .ghost-dialog .top-right,
+.ghost-dialog .mid-left, .ghost-dialog .mid-center, .ghost-dialog .mid-right,
+.ghost-dialog .bot-left, .ghost-dialog .bot-center, .ghost-dialog .bot-right,
+.ghost-dialog .b-c-left, .ghost-dialog .b-c-center, .ghost-dialog .b-c-right {
+  float: left;
+}
+/* line 58, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog .top .top-left, .ghost-dialog .top .top-right {
+  width: 24px;
+  height: 20px;
+}
+/* line 60, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog .top .top-left {
+  background: url(/images/ghost_dialog/fantasmita-esquina-superior-izquierdo-blanco.png) no-repeat 0 0;
+}
+/* line 64, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog .top .top-center * {
+  float: left;
+}
+/* line 66, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog .top .top-center .t-c-left, .ghost-dialog .top .top-center .t-c-right, .ghost-dialog .top .top-center .t-c-center {
+  background: url(/images/ghost_dialog/fantasmita-pixel-superior-blanco.png) repeat-x 0 0;
+}
+/* line 68, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog .top .top-center .t-c-left {
+  width: 0px;
+  height: 20px;
+}
+/* line 70, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog .top .top-center .t-c-right {
+  width: 494px;
+  height: 20px;
+}
+/* line 72, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog .top .top-center .t-c-center {
+  width: 36px;
+  height: 20px;
+}
+/* line 74, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog .top .top-right {
+  background: url(/images/ghost_dialog/fantasmita-esquina-superior-derecho-blanco.png) no-repeat 0 0;
+}
+/* line 77, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog.top-chulito .top-left, .ghost-dialog.top-chulito .top-right {
+  width: 24px;
+  height: 31px;
+}
+/* line 79, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog.top-chulito .top-left {
+  background-position: 0 11px;
+}
+/* line 83, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog.top-chulito .top-center .t-c-left, .ghost-dialog.top-chulito .top-center .t-c-right {
+  background-position: 0 11px;
+}
+/* line 85, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog.top-chulito .top-center .t-c-left {
+  width: 0px;
+  height: 31px;
+}
+/* line 87, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog.top-chulito .top-center .t-c-right {
+  width: 494px;
+  height: 31px;
+}
+/* line 89, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog.top-chulito .top-center .t-c-center {
+  width: 36px;
+  height: 31px;
+  background: url(/images/ghost_dialog/fantasmita-chulito-arriba-blanco.png) no-repeat 0 0px;
+}
+/* line 92, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog.top-chulito .top-right {
+  background-position: 0 11px;
+}
+/* line 94, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog .middle {
+  clear: left;
+}
+/* line 97, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog .middle .mid-left .m-l-left, .ghost-dialog .middle .mid-left .m-l-center, .ghost-dialog .middle .mid-left .m-l-right {
+  background: url(/images/ghost_dialog/fantasmita-pixel-lateral-izquierdo-blanco.png) repeat-y 0px 0;
+}
+/* line 99, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog .middle .mid-left .m-l-left {
+  width: 24px;
+  height: 0px;
+}
+/* line 101, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog .middle .mid-left .m-l-center {
+  width: 24px;
+  height: 36px;
+}
+/* line 103, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog .middle .mid-left .m-l-right {
+  width: 24px;
+  height: 573px;
+}
+/* line 105, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog .middle .mid-center {
+  background: white;
+  width: 530px;
+  height: 609px;
+}
+/* line 112, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog .middle .mid-right .m-r-left, .ghost-dialog .middle .mid-right .m-r-center, .ghost-dialog .middle .mid-right .m-r-right {
+  background: url(/images/ghost_dialog/fantasmita-pixel-lateral-derecho-blanco.png) repeat-y 0 0;
+}
+/* line 114, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog .middle .mid-right .m-r-left {
+  width: 24px;
+  height: 0px;
+}
+/* line 116, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog .middle .mid-right .m-r-center {
+  width: 24px;
+  height: 36px;
+}
+/* line 118, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog .middle .mid-right .m-r-right {
+  width: 24px;
+  height: 573px;
+}
+/* line 123, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog.bottom-chulito .bottom .bot-center .b-c-center {
+  background: url(/images/ghost_dialog/fantasmita-chulito-abajo-blanco.png) no-repeat 0 0px;
+  height: 31px;
+}
+/* line 127, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog.left-chulito .top {
+  margin-left: 11px;
+}
+/* line 130, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog.left-chulito .top-center .t-c-left {
+  width: 48px;
+}
+/* line 132, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog.left-chulito .mid-center {
+  width: 141px;
+}
+/* line 135, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog.left-chulito .mid-left .m-l-left, .ghost-dialog.left-chulito .mid-left .m-l-right {
+  width: 35px;
+  height: 61px;
+  background-position: 11px 0px;
+}
+/* line 138, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog.left-chulito .mid-left .m-l-center {
+  background: url(/images/ghost_dialog/fantasmita-chulito-izquierdo-blanco.png) no-repeat 0px 0;
+  width: 35px;
+  height: 36px;
+}
+/* line 141, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog.left-chulito .mid-left .m-l-right {
+  width: 35px;
+  height: 573px;
+}
+/* line 143, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog.left-chulito .bottom {
+  margin-left: 11px;
+}
+/* line 146, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog.left-chulito .bottom .bot-center .b-t-center {
+  width: 32px;
+}
+/* line 148, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog.left-chulito .bottom .bot-center .b-c-right {
+  width: 39px;
+}
+/* line 150, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog .bottom {
+  clear: left;
+}
+/* line 152, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog .bottom .bot-left {
+  width: 24px;
+  height: 21px;
+  background: url(/images/ghost_dialog/fantasmita-esquina-inferior-izquierdo-blanco.png) no-repeat 0 0;
+}
+/* line 156, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog .bottom .bot-center .b-c-left, .ghost-dialog .bottom .bot-center .b-c-right {
+  background: url(/images/ghost_dialog/fantasmita-pixel-inferior-blanco.png) repeat-x 0 0;
+}
+/* line 158, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog .bottom .bot-center .b-c-left {
+  width: 0px;
+  height: 21px;
+}
+/* line 160, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog .bottom .bot-center .b-c-right {
+  width: 487px;
+  height: 21px;
+}
+/* line 162, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog .bottom .bot-center .b-c-center {
+  width: 43px;
+  height: 21px;
+  background: url(/images/ghost_dialog/fantasmita-pixel-inferior-blanco.png) repeat-x 0 0;
+}
+/* line 165, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog .bottom .bot-right {
+  width: 24px;
+  height: 21px;
+  background: url(/images/ghost_dialog/fantasmita-esquina-inferior-derecho-blanco.png) no-repeat 0 0;
+}
+/* line 170, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog.negro {
+  background: none;
+}
+/* line 172, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog.negro .top-left {
+  background-image: url(/images/ghost_dialog/fantasmita-esquina-superior-izquierdo-negro.png);
+}
+/* line 175, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog.negro .top-center .t-c-left, .ghost-dialog.negro .top-center .t-c-right, .ghost-dialog.negro .top-center .t-c-center {
+  background-image: url(/images/ghost_dialog/fantasmita-pixel-superior-negro.png);
+}
+/* line 177, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog.negro .top-right {
+  background-image: url(/images/ghost_dialog/fantasmita-esquina-superior-derecho-negro.png);
+}
+/* line 181, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog.negro .mid-left .m-l-left, .ghost-dialog.negro .mid-left .m-l-center, .ghost-dialog.negro .mid-left .m-l-right {
+  background: url(/images/ghost_dialog/fantasmita-pixel-lateral-izquierdo-negro.png);
+}
+/* line 184, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog.negro .mid-right .m-r-left, .ghost-dialog.negro .mid-right .m-r-center, .ghost-dialog.negro .mid-right .m-r-right {
+  background: url(/images/ghost_dialog/fantasmita-pixel-lateral-derecho-negro.png) repeat-y 0 0;
+}
+/* line 187, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog.negro .bot-left {
+  width: 24px;
+  height: 21px;
+  background: url(/images/ghost_dialog/fantasmita-esquina-inferior-izquierdo-negro.png);
+}
+/* line 191, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog.negro .bot-center .b-c-left, .ghost-dialog.negro .bot-center .b-c-right {
+  background: url(/images/ghost_dialog/fantasmita-pixel-inferior-negro.png);
+}
+/* line 193, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog.negro .bot-center .b-c-center {
+  width: 43px;
+  height: 21px;
+  background: url(/images/ghost_dialog/fantasmita-pixel-inferior-negro.png);
+}
+/* line 196, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog.negro .bot-right {
+  width: 24px;
+  height: 21px;
+  background: url(/images/ghost_dialog/fantasmita-esquina-inferior-derecho-negro.png);
+}
+/* line 200, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog.negro.top-chulito .t-c-center {
+  background: url(/images/ghost_dialog/fantasmita-chulito-arriba-negro.png) no-repeat 0 -2px;
+}
+/* line 203, ../../app/stylesheets/ghost_dialog.sass */
+.ghost-dialog.negro.bottom-chulito .b-c-center {
+  background: url(/images/ghost_dialog/fantasmita-chulito-abajo-negro.png) no-repeat 0 0px;
+  height: 31px;
+}
+
+/* line 4, ../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.0.rc5/frameworks/blueprint/stylesheets/blueprint/_reset.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 6, ../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.0.rc5/frameworks/blueprint/stylesheets/blueprint/_reset.scss */
+html {
+  font-size: 100.01%;
+}
+
+/* line 16, ../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.0.rc5/frameworks/blueprint/stylesheets/blueprint/_reset.scss */
+div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,
+pre, a, abbr, acronym, address, code, del, dfn, em, img,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, tr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 18, ../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.0.rc5/frameworks/blueprint/stylesheets/blueprint/_reset.scss */
+blockquote, q {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  quotes: "" "";
+}
+/* line 45, ../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.0.rc5/frameworks/blueprint/stylesheets/blueprint/_reset.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+}
+
+/* line 20, ../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.0.rc5/frameworks/blueprint/stylesheets/blueprint/_reset.scss */
+th, td, caption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 22, ../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.0.rc5/frameworks/blueprint/stylesheets/blueprint/_reset.scss */
+table {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+/* line 24, ../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.0.rc5/frameworks/blueprint/stylesheets/blueprint/_reset.scss */
+a img {
+  border: none;
+}
+
+/* line 11, ../../app/stylesheets/styles.sass */
+body {
+  margin-top: 0;
+  overflow: hidden;
+  font-family: "HelveticaNeue-Light", "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-family: "Lucida Grande", Arial, Helvetica, Verdana, sans-serif;
+}
+
+/* line 17, ../../app/stylesheets/styles.sass */
+h1 {
+  font-size: 60px;
+}
+
+/* line 20, ../../app/stylesheets/styles.sass */
+.hidden {
+  display: none;
+}
+
+/* line 23, ../../app/stylesheets/styles.sass */
+.wrap-all {
+  width: 662px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: inline-block;
+}
+/* line 8, ../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.0.rc5/frameworks/compass/stylesheets/compass/utilities/general/_hacks.scss */
+.wrap-all {
+  display: block;
+}
+
+/* line 25, ../../app/stylesheets/styles.sass */
+.row {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 550px;
+  margin-bottom: 7px;
+}
+/* line 138, ../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.0.rc5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .row {
+  overflow-x: hidden;
+}
+
+/* line 28, ../../app/stylesheets/styles.sass */
+.cell {
+  border: 1px solid #aaaaaa;
+  height: 18px;
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 18px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  margin-right: 7px;
+}
+/* line 138, ../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.0.rc5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .cell {
+  overflow-x: hidden;
+}
+/* line 33, ../../app/stylesheets/styles.sass */
+.cell.last {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 18px;
+}
+/* line 138, ../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.0.rc5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .cell.last {
+  overflow-x: hidden;
+}
+
+/* line 36, ../../app/stylesheets/styles.sass */
+#head {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 662px;
+}
+/* line 138, ../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.0.rc5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #head {
+  overflow-x: hidden;
+}
+
+/* line 39, ../../app/stylesheets/styles.sass */
+#rovers-console {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 102px;
+}
+/* line 138, ../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.0.rc5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #rovers-console {
+  overflow-x: hidden;
+}
+/* line 41, ../../app/stylesheets/styles.sass */
+#rovers-console .rover-control {
+  margin-bottom: 10px;
+  padding-bottom: 3px;
+  border: 1px solid #aaaaaa;
+  height: 75px;
+  text-align: center;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+}
+/* line 48, ../../app/stylesheets/styles.sass */
+#rovers-console .rover-control .label {
+  margin-bottom: 5px;
+  -moz-border-radius-topleft: 8px;
+  -webkit-border-top-left-radius: 8px;
+  -moz-border-radius-topright: 8px;
+  -webkit-border-top-right-radius: 8px;
+  -moz-border-radius-bottomleft: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-bottom-right-radius: 0;
+}
+/* line 53, ../../app/stylesheets/styles.sass */
+#rovers-console .rover-control .position {
+  padding-left: 28px;
+  padding-left: 15px;
+}
+/* line 56, ../../app/stylesheets/styles.sass */
+#rovers-console .rover-control .position * {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 18px;
+  height: 24px;
+  margin-right: 2px;
+}
+/* line 138, ../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.0.rc5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #rovers-console .rover-control .position * {
+  overflow-x: hidden;
+}
+/* line 60, ../../app/stylesheets/styles.sass */
+#rovers-console .rover-control .position *.x, #rovers-console .rover-control .position *.y {
+  border: 1px solid #666666;
+  padding: 2px;
+  font-size: 20px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+/* line 65, ../../app/stylesheets/styles.sass */
+#rovers-console .rover-control .position *.y {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 18px;
+}
+/* line 138, ../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.0.rc5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #rovers-console .rover-control .position *.y {
+  overflow-x: hidden;
+}
+/* line 67, ../../app/stylesheets/styles.sass */
+#rovers-console .rover-control .position * input {
+  border: 0;
+}
+/* line 69, ../../app/stylesheets/styles.sass */
+#rovers-console .rover-control .send-to-mars-btn {
+  font-size: 10px;
+  padding: 2px;
+  background-color: #bdbdbd;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  color: white;
+  text-decoration: none;
+}
+
+/* line 84, ../../app/stylesheets/styles.sass */
+#rover-control-0 .label {
+  background-color: #eddb68;
+}
+
+/* line 87, ../../app/stylesheets/styles.sass */
+#rover-control-1 .label {
+  background-color: #68ed8a;
+}
+
+/* line 90, ../../app/stylesheets/styles.sass */
+#rover-control-2 .label {
+  background-color: #c368ed;
+}
+
+/* line 93, ../../app/stylesheets/styles.sass */
+#rover-control-3 .label {
+  background-color: #7668ed;
+}
+
+/* line 96, ../../app/stylesheets/styles.sass */
+#rover-control-4 .label {
+  background-color: #ed8168;
+}
+
+/* line 98, ../../app/stylesheets/styles.sass */
+#grid {
+  position: relative;
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 550px;
+}
+/* line 138, ../../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.0.rc5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #grid {
+  overflow-x: hidden;
+}
+/* line 101, ../../app/stylesheets/styles.sass */
+#grid .rover {
+  width: 18px;
+  height: 18px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border: 1px solid black;
+}
+/* line 105, ../../app/stylesheets/styles.sass */
+#grid .rover#rover-0 {
+  position: absolute;
+  left: 0px;
+  top: 27px;
+  background-color: #eddb68;
+}
+/* line 108, ../../app/stylesheets/styles.sass */
+#grid .rover#rover-1 {
+  position: absolute;
+  left: 27px;
+  top: 0;
+  background-color: #68ed8a;
+}
+/* line 111, ../../app/stylesheets/styles.sass */
+#grid .rover#rover-2 {
+  position: absolute;
+  left: 54px;
+  top: 0;
+  background-color: #c368ed;
+}
+/* line 114, ../../app/stylesheets/styles.sass */
+#grid .rover#rover-3 {
+  position: absolute;
+  left: 81px;
+  top: 0;
+  background-color: #7668ed;
+}
+/* line 117, ../../app/stylesheets/styles.sass */
+#grid .rover#rover-4 {
+  position: absolute;
+  left: 108px;
+  top: 0;
+  background-color: #ed8168;
+}

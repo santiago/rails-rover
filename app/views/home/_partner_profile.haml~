@@ -1,0 +1,9 @@
+#partner-profile
+  .explain
+    %p
+      All information you provide will be held
+      strictly confidential, and will not be shared
+      with anyone except your partner, when you invite
+      him/her to join you on eCoupleCoach
+  =render "shared/ghost_dialog"
+      

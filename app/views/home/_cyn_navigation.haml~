@@ -1,0 +1,9 @@
+%ul
+  %li
+    %a{:href=>"#"} Profile
+  %li
+    %a{:href=>"#"} Clarify
+  %li
+    %a{:href=>"#"} Evaluate
+  %li
+    %a{:href=>"#"} Other

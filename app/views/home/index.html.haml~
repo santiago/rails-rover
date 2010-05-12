@@ -1,0 +1,21 @@
+!!! Strict
+%html{:xmlns=>"http://www.w3.org/1999/xhtml"}
+  = render "shared/head"
+  %body
+    .wrap-all
+      #head
+        %h1 Roger that, Houston!
+      #rover-checker
+        - 5.times do |i|
+          .rover{:id=>"rover-#{i}"}
+            .label Rover #{i}
+            .position
+              %p.x 0
+              %p.comma ,
+              %p.y 0
+        
+      #grid
+        - 20.times do |y|
+          .row{:id=>"row-#{y}"}
+            - 20.times do |x|
+              .cell{:id=>"cell-#{x}-#{y}", :class=>"#{x==19 ? 'last' : nil}"}
